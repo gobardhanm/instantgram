@@ -143,3 +143,6 @@ const posts = [
         Tusername.innerHTML = `${posts[2].username}`
     
         Tcaption.innerHTML += `${posts[2].comment}`
+
+        
+        
