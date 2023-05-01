@@ -7,6 +7,24 @@ const caption = document.getElementById("caption")
 const artistName = document.getElementById("name")
 const add = document.getElementById("add")
 
+const Savatar = document.getElementById("Savatar")
+const SpostSec = document.getElementById("Spost-sec")
+const Sicons = document.getElementById("Sicons")
+const Slikes = document.getElementById("Slikes")
+const Susername = document.getElementById("Susername")
+const Scaption = document.getElementById("Scaption")
+const SartistName = document.getElementById("Sname")
+const Sadd = document.getElementById("Sadd")
+
+const Tavatar = document.getElementById("Tavatar")
+const TpostSec = document.getElementById("Tpost-sec")
+const Ticons = document.getElementById("Ticons")
+const Tlikes = document.getElementById("Tlikes")
+const Tusername = document.getElementById("Tusername")
+const Tcaption = document.getElementById("Tcaption")
+const TartistName = document.getElementById("Tname")
+const Tadd = document.getElementById("Tadd")
+
 
 const posts = [
     {
@@ -48,38 +66,80 @@ const posts = [
     }
 ]
 
-function renderAllPosts(){
-    for(let i = 0; i < posts.length; i++){
+    // First post
 
-        avatar.innerHTML = `<img src="${posts[i].avatar}" alt="avatar" class="avatar-img">`
+        avatar.innerHTML = `<img src="${posts[0].avatar}" alt="avatar" class="avatar-img">`
     
-        artistName.textContent = `${posts[i].name}`
+        artistName.textContent = `${posts[0].name}`
     
-        add.textContent = `${posts[i].location}`
+        add.textContent = `${posts[0].location}`
     
-        postSec.innerHTML = `<img src="${posts[i].post}" alt="the-post" class="the-post" id="the-post">`
+        postSec.innerHTML = `<img src="${posts[0].post}" alt="the-post" class="the-post" id="the-post">`
     
         icons.innerHTML = 
         `
-        <img src="${posts[i].heartIcon}" alt="like-btn" class="like-btn" id="like-btn">
+        <img src="${posts[0].heartIcon}" alt="like-btn" class="like-btn" id="like-btn">
                         
-        <img src="${posts[i].commentIcon}" alt="comment-btn" class="comment-btn">
+        <img src="${posts[0].commentIcon}" alt="comment-btn" class="comment-btn">
                         
-        <img src="${posts[i].shareIcon}" alt="share-btn" class="share-btn">
+        <img src="${posts[0].shareIcon}" alt="share-btn" class="share-btn">
         `
     
-        likes.textContent = `${posts[i].likes} likes`
+        likes.textContent = `${posts[0].likes} likes`
     
-        username.innerHTML = `${posts[i].username}`
+        username.innerHTML = `${posts[0].username}`
     
-        caption.innerHTML += `${posts[i].comment}`
-       
+        caption.innerHTML += `${posts[0].comment}`
+
     
-    }
-}
+        // Second post
+
+        Savatar.innerHTML = `<img src="${posts[1].avatar}" alt="avatar" class="avatar-img">`
+    
+        SartistName.textContent = `${posts[1].name}`
+    
+        Sadd.textContent = `${posts[1].location}`
+    
+        SpostSec.innerHTML = `<img src="${posts[1].post}" alt="the-post" class="the-post" id="the-post">`
+    
+        Sicons.innerHTML = 
+        `
+        <img src="${posts[1].heartIcon}" alt="like-btn" class="like-btn" id="like-btn">
+                        
+        <img src="${posts[1].commentIcon}" alt="comment-btn" class="comment-btn">
+                        
+        <img src="${posts[1].shareIcon}" alt="share-btn" class="share-btn">
+        `
+    
+        Slikes.textContent = `${posts[1].likes} likes`
+    
+        Susername.innerHTML = `${posts[1].username}`
+    
+        Scaption.innerHTML += `${posts[1].comment}`
 
 
+        // Third post
 
 
-renderAllPosts();
-
+        Tavatar.innerHTML = `<img src="${posts[2].avatar}" alt="avatar" class="avatar-img">`
+    
+        TartistName.textContent = `${posts[2].name}`
+    
+        Tadd.textContent = `${posts[2].location}`
+    
+        TpostSec.innerHTML = `<img src="${posts[2].post}" alt="the-post" class="the-post" id="the-post">`
+    
+        Ticons.innerHTML = 
+        `
+        <img src="${posts[2].heartIcon}" alt="like-btn" class="like-btn" id="like-btn">
+                        
+        <img src="${posts[2].commentIcon}" alt="comment-btn" class="comment-btn">
+                        
+        <img src="${posts[2].shareIcon}" alt="share-btn" class="share-btn">
+        `
+    
+        Tlikes.textContent = `${posts[2].likes} likes`
+    
+        Tusername.innerHTML = `${posts[2].username}`
+    
+        Tcaption.innerHTML += `${posts[2].comment}`
